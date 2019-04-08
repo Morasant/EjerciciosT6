@@ -9,8 +9,12 @@ public class Programa {
     	public static void main(String[] args) throws Exception {
     		String numero = "";
     		numero = pedirNumero();
-    		System.out.println("El cuadrado del número " + numero + " es: " + calcularCuadrado(numero));
+    		mostrarResultado(numero);
     	}
+
+		private static void mostrarResultado(String numero) {
+			System.out.println("El cuadrado del número " + numero + " es: " + calcularCuadrado(numero));
+		}
 
 		private static int calcularCuadrado(String numero) {
 			return Integer.parseInt(numero) * Integer.parseInt(numero);
